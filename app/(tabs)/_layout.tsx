@@ -22,7 +22,7 @@ export default function TabLayout() {
           title: "Vote",
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon
-              name={focused ? "home" : "home-outline"}
+              name={focused ? "newspaper-sharp" : "newspaper-outline"}
               color={color}
             />
           ),

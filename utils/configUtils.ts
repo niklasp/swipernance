@@ -1,8 +1,8 @@
 import { IProviderMetadata } from "@walletconnect/modal-react-native";
 
 const providerMetadata: IProviderMetadata = {
-  name: "Modal with UProvider",
-  description: "RN example using Universal Provider by WalletConnect",
+  name: "Swipernance",
+  description: "Polkadot Governance in your pocket",
   url: "https://walletconnect.com/",
   icons: ["https://avatars.githubusercontent.com/u/37784886"],
   redirect: {
@@ -12,11 +12,15 @@ const providerMetadata: IProviderMetadata = {
 
 const sessionParams = {
   namespaces: {
-    eip155: {
-      methods: ["eth_sendTransaction", "personal_sign"],
-      chains: ["eip155:1"],
+    polkadot: {
+      methods: ["polkadot_sendTransaction", "polkadot_signMessage"],
+      chains: [
+        "polkadot:91b171bb158e2d3848fa23a9f1c25182", //polkadot relay
+      ],
       events: ["chainChanged", "accountsChanged"],
-      rpcMap: {},
+      rpcMap: {
+        "polkadot:91b171bb158e2d3848fa23a9f1c25182": "https://rpc.polkadot.io",
+      },
     },
   },
 };

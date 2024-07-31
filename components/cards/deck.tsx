@@ -64,7 +64,7 @@ export function Deck(props) {
         stackSeparation={15}
         overlayLabels={{
           bottom: {
-            title: "BLEAH",
+            title: "👎 BLEAH",
             style: {
               label: {
                 backgroundColor: "black",
@@ -116,7 +116,7 @@ export function Deck(props) {
             },
           },
           top: {
-            title: "SUPER LIKE",
+            title: "👍 SUPER LIKE",
             style: {
               label: {
                 backgroundColor: "black",
